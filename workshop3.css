@@ -1,0 +1,80 @@
+body {
+  height: min(42vh, 340px);
+}
+.appshell {
+  display: grid;
+  grid-template: "menubar menubar menubar" 56px "sidebar workspace inspector" 1fr / 72px 1fr 220px;
+  gap: 10px;
+  box-sizing: border-box;
+}
+.menubar {
+  grid-area: menubar;
+  background: rgb(15, 23, 42);
+  color: white;
+  border-radius: 6px;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+}
+a {
+  color: rgb(203, 213, 225);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+}
+.sidebar {
+  grid-area: sidebar;
+  background: rgb(224, 242, 254);
+  border: 1px solid rgb(186, 230, 253);
+  border-radius: 6px;
+  padding: 10px;
+  display: grid;
+  gap: 8px;
+  align-content: start;
+}
+.workspace {
+  grid-area: workspace;
+  background: white;
+  border: 1px solid rgb(226, 232, 240);
+  border-radius: 6px;
+  padding: 22px;
+}
+.inspector {
+  grid-area: inspector;
+  background: rgb(236, 253, 245);
+  border: 1px solid rgb(187, 247, 208);
+  border-radius: 6px;
+  padding: 16px;
+}
+.title {
+  margin: 0px 0px 10px;
+  color: rgb(37, 99, 235);
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.control {
+  height: 8px;
+  width: 100%;
+  border-radius: 999px;
+  background: rgb(34, 197, 94);
+}
+.control--short {
+  height: 8px;
+  width: 62%;
+  border-radius: 999px;
+  background: rgb(34, 197, 94);
+}
+button {
+  border: 0px;
+  border-radius: 4px;
+  background: rgb(3, 105, 161);
+  color: white;
+  padding: 8px 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -1,0 +1,39 @@
+.magazine {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 140px);
+  gap: 12px;
+}
+.article.article-main {
+  padding: 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-area: span 2 / span 2;
+  background: linear-gradient(135deg, rgb(3, 142, 19), rgb(37, 99, 235));
+  color: white;
+}
+
+.article.article-sub {
+  padding: 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgb(248, 250, 252);
+  border: 1px solid rgb(226, 232, 240);
+}
+.article-label {
+  margin: 0px 0px 4px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: rgb(100, 116, 139);
+}
+h3 {
+  margin: 4px 0px 0px;
+  font-size: 13px;
+  color: rgb(30, 41, 59);
+}
